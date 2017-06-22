@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Pomodoro End Of Day</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="auto_grat_card">Auto Gratuity From Cards (-)</string>
+    <string name="button_calculate">Calulate!</string>
+    <string name="title_activity_display_total">DisplayTotalActivity</string>
+
+    <string name="cash_sales_label">Cash Sales: </string>
+    <string name="cash_sales_field">\t\t\t\t\t\t\t\t</string>
+    <string name="card_sales_label">Card Sales: </string>
+    <string name="card_sales_field">\t\t\t\t\t\t\t\t</string>
+    <string name="check_sales_label">Check Sales: </string>
+    <string name="check_sales_field">\t\t\t\t\t\t\t\t</string>
+    <string name="gc_sold_label">Gift Cert Sold: </string>
+    <string name="gc_sold_field">\t\t\t\t\t\t\t\t</string>
+    <string name="gc_redeemed_label">Gift Cert Redeemed: </string>
+    <string name="gc_redeemed_field">\t\t\t\t\t\t\t\t</string>
+    <string name="card_tips_label">Card Tips: </string>
+    <string name="card_tips_field">\t\t\t\t\t\t\t\t</string>
+    <string name="total_cash_label">Total Cash: </string>
+    <string name="total_cash_field"> (Bring Register to $200 first) </string>
+    <string name="auto_grat_card_label">Auto Gratuity (card): </string>
+    <string name="auto_grat_card_field">\t\t\t\t\t\t\t\t</string>
+    <string name="auto_grat_cash_label">Auto Gratuity (cash): </string>
+    <string name="auto_grat_cash_field">\t\t\t\t\t\t\t\t</string>
+    <string name="auto_grat_check_label">Auto Gratuity (check): </string>
+    <string name="auto_grat_check_field">\t\t\t\t\t\t\t\t</string>
+    <string name="dinners_label">Number Of Guests: </string>
+    <string name="dinners_field">\t\t\t\t\t</string>
+
+    <string name="cc_processing_fee">2.5</string>
+    <string name="tax_rate">10.1</string>
+    <string name="register_amount">200</string>
+
+
+</resources>

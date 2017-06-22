@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.electricdrewbaloogmail.pomodoroendofday.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pomodoro End Of Day Totals Calculator"
+        android:textSize="40px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/cash_sales_layout"
+        android:layout_below="@id/app_title">
+
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/cash_sales_label"
+            android:text="@string/cash_sales_label" />
+
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/cash_sales"
+            android:hint="@string/cash_sales_field" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/card_sales_layout"
+        android:layout_below="@+id/cash_sales_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/card_sales_label"
+            android:text="@string/card_sales_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/card_sales"
+            android:hint="@string/card_sales_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/check_sales_layout"
+        android:layout_below="@+id/card_sales_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/check_sales_label"
+            android:text="@string/check_sales_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/check_sales"
+            android:hint="@string/check_sales_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/gc_sold_layout"
+        android:layout_below="@+id/check_sales_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/gc_sold_label"
+            android:text="@string/gc_sold_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/gc_sold"
+            android:hint="@string/gc_sold_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/gc_redeemed_layout"
+        android:layout_below="@+id/gc_sold_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/gc_redeemed_label"
+            android:text="@string/gc_sold_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/gc_redeemed"
+            android:hint="@string/gc_redeemed_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/card_tips_layout"
+        android:layout_above="@+id/total_cash_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/card_tips_label"
+            android:text="@string/card_tips_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/card_tips"
+            android:hint="@string/card_tips_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/total_cash_layout"
+        android:layout_above="@+id/auto_grat_card_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/total_cash_label"
+            android:text="@string/total_cash_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/total_cash"
+            android:hint="@string/total_cash_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/auto_grat_card_layout"
+        android:layout_above="@+id/auto_grat_cash_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/auto_grat_card_label"
+            android:text="@string/auto_grat_card_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/auto_grat_card"
+            android:hint="@string/auto_grat_card_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/auto_grat_cash_layout"
+        android:layout_above="@+id/auto_grat_check_layout">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/auto_grat_cash_label"
+            android:text="@string/auto_grat_cash_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/auto_grat_cash"
+            android:hint="@string/auto_grat_cash_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/auto_grat_check_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/auto_grat_check_label"
+            android:text="@string/auto_grat_check_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/auto_grat_check"
+            android:hint="@string/auto_grat_check_field" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PomLinearLayout"
+        android:id="@+id/dinners_layout"
+        android:layout_above="@+id/card_tips_layout"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true">
+        <TextView
+            style="@style/PomTextView"
+            android:id="@+id/dinners_label"
+            android:text="@string/dinners_label" />
+        <EditText
+            style="@style/PomEditText"
+            android:id="@+id/dinners"
+            android:hint="@string/dinners_field" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="calculate"
+        android:text="@string/button_calculate" />
+
+
+
+</RelativeLayout>
